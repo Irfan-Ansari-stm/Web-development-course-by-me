@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"],input[type="email"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            background-color: red;
+            border: 5px solid yellow;
+        }
+        select{
+            width: 100%;
+            padding: 16px 20px;
+            border: 5px dashed red;
+            border-radius: 5px;
+            background-color: beige;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 4px solid rgb(255, 0, 8);
+            margin-top: 10px;
+            border-radius: 9px;
+            background-color: aquamarine;
+            resize: none;
+            font-size: 30px;
+        }
+        input[type="button"]{
+            background-color: rgb(153, 255, 0);
+            width: 100%;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 16px 32px;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">First name</label>
+        <input type="text">
+        <label for="lname">Last name</label>
+        <input type="text" name="lname">
+        <label for="lname">Email</label>
+        <input type="email" name="lname">
+        <label for="gender">Select your gender</label>
+        <select name="gender">
+            <option value="one">MALE</option>
+            <option value="TWO">FEMALE</option>
+            <option value="THREE">OTHERS</option>
+        </select>
+        <textarea name="com" cols="30" rows="10"></textarea>
+        <input type="button" value="submit">
+    </form>
+</body>
+</html>
